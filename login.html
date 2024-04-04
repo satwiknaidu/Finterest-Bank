@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(0, 0, 0);
+            background-image: url('img2.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            padding-left: 40px;
+            background-color:  #f4bbff;
+        }
+        #cont
+        {
+            margin:10px auto 100px;
+            display:flex;
+            justify-content: space-evenly;
+            align-content: space-around;
+        }
+        .container {
+            margin:50px auto 20px;
+            padding-bottom: 10%;
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            background-color: #cbc2c2;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 50px;
+            justify-content: center;
+            margin-left: 450px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(0.5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .login{
+        font-style: roboto;
+        text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #000000;
+            border-radius: 2px;
+            box-sizing: border-box;
+        }
+        .links-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .forgot{
+        text-align: center;
+        padding-top: 0.2px; 
+        color: rgb(62, 61, 61);
+        text-decoration: underline;
+        }
+        .forgot:hover{
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #0000FF;
+            color: #ffffff;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+            background: linear-gradient(to right, #fb00ff, #3131ff);
+            transition: background 0.3s ease;
+
+        }
+        button:hover {
+            background: linear-gradient(to right,  #3131ff,#fb00ff);
+            transition: background 0.3s ease;
+
+        }
+        .footer {
+            color: rgb(0, 0, 0);
+            padding: 0px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height:3.5%;
+            font-size: 10px;
+        }
+        .foot{
+            background-color: #f4bbff;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="img">
+        <img src="st1.png" alt="Logo" width="400";/> 
+    </div>
+    </div>
+    <div id="cont">
+        <div class="container">
+            <h2 class="login">Login</h2>
+            <form action="login_process.php" method="post">
+                <label for="username">UserID</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div class="links-container">
+                    <p class="forgot">Forgot password</p>
+                </div>
+                <button type="submit" >Login</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+     <p class="foot">Secured page  &copy; 2024 FINTEREST BANK. All rights reserved.</p>
+    </div>
+</body>
+</html>
