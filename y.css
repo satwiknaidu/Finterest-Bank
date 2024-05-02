@@ -9,15 +9,16 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	margin-top: 50px;
 	min-height: 350px;
-	perspective: 1000px;
+	perspective: 500px;
 	overflow: hidden;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 .testimonials .item {
 	width: 450px;
 	padding: 30px;
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: #f8d5ff;
 	position: absolute;
 	top: 0;
@@ -47,8 +48,8 @@
 	align-items: center;
 }
 .dots label {
-	height: 5px;
-	width: 5px;
+	height: 7px;
+	width: 7px;
 	border-radius: 50%;
 	cursor: pointer;
 	background-color: #0000ff;

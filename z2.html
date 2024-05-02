@@ -11,22 +11,22 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
         }
-        h1{
+        h1 {
             color: #0000ff;
         }
         
         header {
             background-color: #f4bbff;
-            padding-left: 40px ;
+            padding: 20px;
+            text-align: center;
         }
-        
-       
         
         nav {
             background-color: #ec8aff;
-            padding: 15px  ;
-            text-align: left;
+            padding: 15px;
+            text-align: center;
         }
         ul {
             list-style-type: none;
@@ -43,40 +43,25 @@
             font-weight: bold;
             transition: all 0.3s ease;
         }
+        nav ul li a:hover {
+            color: #007bff;
+        }
         section {
             padding: 20px;
+            text-align: center;
         }
         footer {
             color: rgb(0, 0, 0);
-            padding: 0px;
+            padding: 10px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
-            height:3.5%;
-            font-size: 10px;
-        }
-        .foot{
             background-color: #f4bbff;
-
-        }   
-        
-        .accounts{
-            background-color: #f4bbff;
-            padding: 10px;
-            margin-top: 10px;                                 
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         
-        #same :hover{
-            text-decoration:underline;
-        }
-        nav ul li a:hover {
-            color: #007bff;
-        }
         .account-option {
-            background-color: #f4bbff;
+            background-color: #fff;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
@@ -88,6 +73,8 @@
         }
         .account-option h3 {
             color: #0000ff;
+            margin-bottom: 10px;
+            font-size: 24px;
         }
         .account-option p {
             color: #555;
@@ -104,33 +91,25 @@
         .account-option a:hover {
             color: #0056b3;
         }
-        /* .hr{
-            border-left: 1px solid rgb(0, 0, 0);
-            border-right:  1px solid rgb(0, 0, 0);
-            height:20px;
-            position: absolute;
-            margin-left: -10px;
-        } */
     </style>
 </head>
 <body>
     <header>
-        <img class="img" src="st1.png" alt="Logo" width="400";/> 
+        <img class="img" src="st1.png" alt="Logo" width="200";/> 
     </header>
      <nav>
         <ul>
             <li class="home" id="same"><a href="home.html">Home</a></li>
-            <li class="accounts" id="same"><a href="accounts.html">Accounts</a></li>
-            <li class="payments" id="same"><a href="payments.html">Payments</a></li>
-            <li class="balance" id="same"><a href="balance.html">Balance</a></li>
-            <li class="cards" id="same"><a href="cards.html">Cards</a></li>
             <li class="deposits" id="same"><a href="deposits.html">Deposits</a></li>
+            <li class="accounts" id="same"><a href="accounts.html">Accounts</a></li>
             <li class="loans" id="same"><a href="loans.html">Loans</a></li>
-            <li class="login" id="same"><a href="mainhome.html">Logout</a></li>
+            <li class="payments" id="same"><a href="payments.html">Payments</a></li>
+            <li class="cards" id="same"><a href="cards.html">Cards</a></li>
+            <li class="login" id="same"><a href="login.html">Logout</a></li>
         </ul>
     </nav> 
     <section>
-        <h2 >Explore Our Account Options</h2>
+        <h2 style="color: #0000ff;">Explore Our Account Options</h2>
         
         <div class="account-option">
             <h3>Savings Account</h3>
@@ -151,7 +130,7 @@
         </div>
     </section>
     <footer>
-        <p class="foot" >Secured page  &copy; 2024 FINTEREST BANK. All rights reserved.</p>
+        <p style="margin: 0;">Secured page  &copy; 2024 FINTEREST BANK. All rights reserved.</p>
     </footer>
 </body>
 </html>

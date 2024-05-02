@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FINTEREST BANK </title>
     <link rel="icon" type="image/x-icon" href="logo-removebg.png">
-
+    <link rel="stylesheet" href="z.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4bbff;
         }
         h1{
             color: #0000ff;
@@ -40,6 +41,11 @@
         nav ul li a {
             color: #000000;
             text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #007bff;
         }
         section {
             padding: 20px;
@@ -69,7 +75,7 @@
         #same :hover{
             text-decoration:underline;
         }
-        .hr{
+        /* .hr{
             
             border-left: 1px solid rgb(0, 0, 0);
             border-right:  1px solid rgb(0, 0, 0);
@@ -77,8 +83,48 @@
             position: absolute;
             margin-left: -10px;
  
-        }
+        } */
+        form {
+display: flex;
+flex-direction: column;
+/* margin: 20px auto; */
+width: 300px;
+padding: 20px;
+color: rgb(0, 0, 0);
+/* border: 1px solid #ccc; */
+border-radius: 5px;
+background-color: aliceblue;
+margin: 5% auto;
+backdrop-filter: blur(7px) saturate(200%);
+-webkit-backdrop-filter: blur(7px) saturate(200%);
+background-color: rgba(165, 165, 165, 0.44);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125);
+}
+label {
+margin-bottom: 5px;
+display: block;
+}
+input, select {
+padding: 5px;
+border: 1px solid #ccc;
 
+border-radius: 3px;
+margin-bottom: 10px;
+}
+.error {
+color: blue;
+font-weight: bold;
+margin-bottom: 5px;
+}
+button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(16, 180, 41);
+    border-radius: 3px;
+
+}
+        
+       
     </style>
 </head>
 <body>
@@ -91,32 +137,81 @@
 
         <ul>
             <li class="home" id="same"><a href="home.html">Home</a></li>
-            <pr class="hr"> </pr>
-            <li class="about" id="same"><a href="about.html">About  Us</a></li>
-            <pr class="hr"> </pr>
-            <li class="serv" id="same"><a href="#">Services</a></li>
-            <pr class="hr"> </pr>
-            <li class="deposits" id="same"><a href="deposits.html">Deposits</a></li>
-            <pr class="hr"> </pr>
             <li class="accounts" id="same"><a href="accounts.html">Accounts</a></li>
-            <pr class="hr"> </pr>
-            <li class="loans" id="same"><a href="loans.html">Loans</a></li>
-            <pr class="hr"> </pr>
             <li class="payments" id="same"><a href="payments.html">Payments</a></li>
-            <pr class="hr"> </pr>
+            <li class="balance" id="same"><a href="balance.html">Balance</a></li>
             <li class="cards" id="same"><a href="cards.html">Cards</a></li>
-            <pr class="hr"> </pr>
-            
-            <li class="contact" id="same"><a href="#">Contact</a></li>
-            <pr class="hr"> </pr>
-            <li class="login" id="same"><a href="login.html">Login</a></li>
-            <pr class="hr"> </pr>
+            <li class="deposits" id="same"><a href="deposits.html">Deposits</a></li>
+            <li class="loans" id="same"><a href="loans.html">Loans</a></li>
+            <li class="login" id="same"><a href="mainhome.html">Logout</a></li>
         </ul>
     </nav> 
     <section>
-        <h2>Welcome to Our Banking Website</h2>
-        <p>Ukldfbgibhdfiphgsi;nfgkb asm.rgkjlawrkl bjrgioawrj ibhsr iui ri hiuwhguoha' usrjbg ;kjzdbh;fuiygh[9zs7hy giargjlb aurk gh iushr'guohawkjrsg bakurh g'ouhargiu urgasrhg uo rg].</p>
+        <div class="card">
+            <figure class="card__figure">
+              <img src="st1.png" class="card__figure--logo"></img>
+            </figure>
+            <div class="card__reader">
+              <div class="card__reader--risk card__reader--risk-one"></div>
+              <div class="card__reader--risk card__reader--risk-two"></div>
+              <div class="card__reader--risk card__reader--risk-three"></div>
+              <div class="card__reader--risk card__reader--risk-four"></div>
+            </div>
+            <p class="card__number">5032 9334 3764 9846</p>
+            <div class="card__dates">
+              <span class="card__dates--first">09/16</span>
+              <span class="card__dates--second">09/19</span>
+            </div>
+            <p class="card__name">SATWIK NAIDU
+            <p>
+            <div class="card__flag">
+              <div class="card__flag--globe"></div>
+              <div class="card__flag--red"></div>
+              <div class="card__flag--yellow"></div>
+            </div>
+        </div>
     </section>
+    
+
+    <section style="margin-top: 50px;">
+        <div style='margin: auto; width: 400px; max-width: 95vw; font-family: "Helvetica Neue", Helvetica, sans-serif; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); padding: 10px; margin-top: 50px; margin-bottom: 50px; border-radius: 15px; background: #ffffff;'>
+            <h1 style="font-weight: 500; text-align: center; ">Your Cards</h1>
+            <div class="credit-card visa selectable">
+                <div class="credit-card-last4">
+                    4242
+                </div>
+                <div class="credit-card-expiry">
+                    08/25
+                </div>
+            </div>
+            <div class="credit-card mastercard selectable">
+                <div class="credit-card-last4">
+                    8210
+                </div>
+                <div class="credit-card-expiry">
+                    10/22
+                </div>
+            </div>
+            <div class="credit-card amex selectable">
+                <div class="credit-card-last4">
+                    8431
+                </div>
+                <div class="credit-card-expiry">
+                    01/24
+                </div>
+            </div>
+            <div class="credit-card unionpay selectable">
+                <div class="credit-card-last4">
+                    0005
+                </div>
+                <div class="credit-card-expiry">
+                    03/25
+                </div>
+            </div>
+    </section>
+   
+    
+   
     <footer>
         <p class="foot" >Secured page  &copy; 2024 FINTEREST BANK. All rights reserved.</p>
     </footer>

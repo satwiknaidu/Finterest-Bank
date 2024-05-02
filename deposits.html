@@ -40,6 +40,11 @@
         nav ul li a {
             color: #000000;
             text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #007bff;
         }
         section {
             padding: 20px;
@@ -58,15 +63,16 @@
             background-color: #f4bbff;
 
         }
-        .deposits{
+        .deposit-option {
             background-color: #f4bbff;
-            padding: 10px;
-            margin-top: 10px;                                 
+            padding: 20px;
+            margin-bottom: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
-        .deposit-option {
-            margin-bottom: 20px;
+        .deposit-option:hover {
+            transform: translateY(-5px);
         }
         .deposit-option h3 {
             color: #0000ff;
@@ -78,17 +84,29 @@
             color: #007bff;
             text-decoration: none;
             font-weight: bold;
+            transition: all 0.3s ease;
         }
         .deposit-option a:hover {
-            text-decoration: underline;
+            color: #0056b3;
         }
-        .hr{
+        .deposits{
+            background-color: #f4bbff;
+            padding: 10px;
+            margin-top: 10px;                                 
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #same :hover{
+             text-decoration:underline; 
+        }
+        /* .hr{
             border-left: 1px solid rgb(0, 0, 0);
             border-right:  1px solid rgb(0, 0, 0);
             height:20px;
             position: absolute;
             margin-left: -10px;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -98,26 +116,13 @@
      <nav>
         <ul>
             <li class="home" id="same"><a href="home.html">Home</a></li>
-            <pr class="hr"> </pr>
-            <li class="about" id="same"><a href="about.html">About</a></li>
-            <pr class="hr"> </pr>
-            <li class="serv" id="same"><a href="#">Services</a></li>
-            <pr class="hr"> </pr>
-            <li class="deposits" id="same"><a href="deposits.html">Deposits</a></li>
-            <pr class="hr"> </pr>
             <li class="accounts" id="same"><a href="accounts.html">Accounts</a></li>
-            <pr class="hr"> </pr>
-            <li class="loans" id="same"><a href="loans.html">Loans</a></li>
-            <pr class="hr"> </pr>
             <li class="payments" id="same"><a href="payments.html">Payments</a></li>
-            <pr class="hr"> </pr>
+            <li class="balance" id="same"><a href="balance.html">Balance</a></li>
             <li class="cards" id="same"><a href="cards.html">Cards</a></li>
-            <pr class="hr"> </pr>
-            
-            <li class="contact" id="same"><a href="#">Contact</a></li>
-            <pr class="hr"> </pr>
-            <li class="login" id="same"><a href="login.html">Login</a></li>
-            <pr class="hr"> </pr>
+            <li class="deposits" id="same"><a href="deposits.html">Deposits</a></li>
+            <li class="loans" id="same"><a href="loans.html">Loans</a></li>
+            <li class="login" id="same"><a href="mainhome.html">Logout</a></li>
         </ul>
     </nav> 
     <section>

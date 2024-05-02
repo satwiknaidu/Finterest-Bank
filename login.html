@@ -74,7 +74,7 @@
             color: rgb(0, 0, 0);
             cursor: pointer;
         }
-        button{
+        .button{
             width: 100%;
             padding: 10px;
             border: none;
@@ -86,9 +86,11 @@
             margin-top: 10px;
             background: linear-gradient(to right, #fb00ff, #3131ff);
             transition: background 0.3s ease;
+            padding: 10px 130px 10px;
+            text-decoration: none;
 
         }
-        button:hover {
+        .button:hover {
             background: linear-gradient(to right,  #3131ff,#fb00ff);
             transition: background 0.3s ease;
 
@@ -107,6 +109,7 @@
             background-color: #f4bbff;
 
         }
+        
     </style>
 </head>
 <body>
@@ -118,7 +121,7 @@
     <div id="cont">
         <div class="container">
             <h2 class="login">Login</h2>
-            <form action="login_process.php" method="post">
+            <form action=" " method="">
                 <label for="username">UserID</label>
                 <input type="text" id="username" name="username" required>
                 <label for="password">Password</label>
@@ -126,7 +129,8 @@
                 <div class="links-container">
                     <p class="forgot">Forgot password</p>
                 </div>
-                <button type="submit" >Login</button>
+                <a class="button" href="home.html">Login</a> 
+                <!-- <button type="submit" >Login</button>  -->
             </form>
         </div>
     </div>
